@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@mipmap/ic_notifications_white"
+        app:showAsAction="always"
+        android:title="@string/action_notification" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/ic_message_white"
+        app:showAsAction="always"
+        android:title="@string/direct_messages" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search_white"
+        app:showAsAction="always"
+        android:title="@string/search" />
+    <item android:visible="true"
+        android:id="@+id/m_area"
+        android:title="Areas"
+        android:enabled="true">
+            <item
+                android:id="@+id/my_profile"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/my_profile"
+                />
+            <item
+                android:id="@+id/about"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/about"
+                />
+            <item
+                android:id="@+id/house_rules"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/house_rules"
+                />
+            <item
+                android:id="@+id/settings"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/settings"
+                />
+            <item
+                android:id="@+id/help"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/help"
+                />
+            <item
+                android:id="@+id/terms_and_conditions"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/terms_and_conditions"
+                />
+            <item
+                android:id="@+id/sign_out"
+                android:icon="@mipmap/ic_more_vert_white"
+                app:showAsAction="never"
+                android:title="@string/sign_out"
+                />
+    </item>
+
+
+</menu>
