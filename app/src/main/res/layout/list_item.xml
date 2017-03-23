@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/sideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/linegreen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+            <TextView
+                android:id="@+id/currencyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3d3d3d"
+                android:textStyle="bold"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/currencyDescr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a1a1a1"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uptrend"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/currencyValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#3d3d3d"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAlignment="textEnd"/>
+            <TextView
+                android:id="@+id/currencyValueChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

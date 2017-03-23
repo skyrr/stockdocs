@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="38dp">
 
     <TextView
         android:id="@+id/lastNameAdapter"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="38dp"
         android:gravity="center"
         android:layout_weight="1"
         android:textStyle="bold"
-        android:text="lastName"/>
+        android:text="lastName"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/firstNameAdapter"
@@ -25,7 +27,7 @@
         android:id="@+id/ageStudentAdapter"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="38dp"
         android:textStyle="bold"
         android:layout_weight="1"
         android:text="age"/>

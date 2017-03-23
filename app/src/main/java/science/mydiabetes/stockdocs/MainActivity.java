@@ -16,12 +16,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
         vpPager.getCurrentItem(); // --> 2
         vpPager.setCurrentItem(1);
 
+//        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+//        FragmentViewPager fragmentViewPager = FragmentViewPager.newInstance("One", "One");
+//        ft.replace(R.id.activity_main, fragmentViewPager);
+//        ft.commit();
 
     }
 
@@ -46,11 +51,15 @@ public class MainActivity extends AppCompatActivity {
 //                ft1.commit();
                 return true;
             case R.id.about:
+                return true;
+            case R.id.sign_out:
                 finish();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+
 }
 

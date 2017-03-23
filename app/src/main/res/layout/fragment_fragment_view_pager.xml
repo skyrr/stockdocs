@@ -2,13 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/fragment_frame"
-    tools:context="layout.SecondFragment">
+    tools:context="science.mydiabetes.stockdocs.FragmentViewPager">
 
     <!-- TODO: Update blank fragment layout -->
-    <ListView
-        android:id="@+id/list"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
